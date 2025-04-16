@@ -276,6 +276,13 @@ require('lazy').setup({
     },
   },
 
+  { --My own plugin
+    'ImposterAmongNerds/nvim-myplugin',
+    config = function()
+      require 'myplugin.init'
+      require 'myplugin.tracker.meds'
+    end,
+  },
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -1003,6 +1010,15 @@ require('lazy').setup({
     },
   },
 })
+
+require('lazy').setup {
+  {
+    '~/AppData/Local/nvim_myplugin/lua/myplugin',
+    config = function()
+      require('myplugin.init').setup()
+    end,
+  },
+}
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
