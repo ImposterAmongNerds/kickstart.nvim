@@ -1016,6 +1016,7 @@ require('lazy').setup {
     '~/AppData/Local/nvim_myplugin/lua/myplugin',
     config = function()
       require('myplugin.init').setup()
+      require('myplugin.tracker.meds').setup()
     end,
   },
 }
