@@ -12,7 +12,7 @@
   "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },
   "mini.nvim": { "branch": "main", "commit": "6be765891c95242f6b8ebd3a25aa285ab3e9f6de" },
   "nvim-lspconfig": { "branch": "master", "commit": "a56f4b9dde5daf3d4c7bb50cf78ab609537f2259" },
-  "nvim-myplugin": { "branch": "main", "commit": "572d16203254db500a1611ec6b7779f107cc08b2" },
+  "nvim-myplugin": { "branch": "main", "commit": "2281625bb1299d32a45296bc3142978bd8fa8a12" },
   "nvim-treesitter": { "branch": "master", "commit": "684eeac91ed8e297685a97ef70031d19ac1de25a" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "1f08ed60cafc8f6168b72b80be2b2ea149813e55" },
