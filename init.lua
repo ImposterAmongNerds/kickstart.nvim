@@ -280,8 +280,18 @@ require('lazy').setup({
     'ImposterAmongNerds/nvim-myplugin',
     config = function()
       require 'myplugin.init'
+      require 'myplugin.tracker.init'
+      require 'myplugin.tracker.db'
+      require 'myplugin.tracker.ui'
+      require 'myplugin.tracker.espresso'
       require 'myplugin.tracker.meds'
+      require('meds').setup()
     end,
+  },
+
+  { -- Calendar
+    'itchyny/calendar.vim',
+    config = function() end,
   },
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
@@ -1011,15 +1021,15 @@ require('lazy').setup({
   },
 })
 
-require('lazy').setup {
-  {
-    '~/AppData/Local/nvim_myplugin/lua/myplugin',
-    config = function()
-      require('myplugin.init').setup()
-      require('myplugin.tracker.meds').setup()
-    end,
-  },
-}
+--require('lazy').setup {
+--  {
+--    '~/AppData/Local/nvim_myplugin/lua/myplugin',
+--    config = function()
+--      require('myplugin.init').setup()
+--      require('myplugin.tracker.meds').setup()
+--    end,
+--  },
+--}
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
