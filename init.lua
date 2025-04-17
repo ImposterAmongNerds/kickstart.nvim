@@ -285,7 +285,7 @@ require('lazy').setup({
       require 'myplugin.tracker.ui'
       require 'myplugin.tracker.espresso'
       require 'myplugin.tracker.meds'
-      require('meds').setup()
+      require('myplugin.tracker.meds').setup()
     end,
   },
 
