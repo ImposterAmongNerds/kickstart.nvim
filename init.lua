@@ -276,16 +276,36 @@ require('lazy').setup({
     },
   },
 
-  { --My own plugin
-    'ImposterAmongNerds/nvim-myplugin',
+  --{ --My own plugin
+  --'ImposterAmongNerds/nvim-myplugin',
+  --config = function()
+  --require 'myplugin.init'
+  --require 'myplugin.tracker.init'
+  --  require 'myplugin.tracker.db'
+  --require 'myplugin.tracker.ui'
+  --require 'myplugin.tracker.espresso'
+  --require 'myplugin.tracker.meds'
+  --end,
+  --},
+
+  {
+    dir = '~/AppData/Local/nvim-myplugin/',
+    dev = true,
     config = function()
       require 'myplugin.init'
       require 'myplugin.tracker.init'
-      --  require 'myplugin.tracker.db'
       require 'myplugin.tracker.ui'
       require 'myplugin.tracker.espresso'
       require 'myplugin.tracker.meds'
-      -- require('myplugin.tracker.meds').setup()
+    end,
+  },
+
+  {
+    dir = '~/AppData/Local/nvim-luaimg/',
+    dev = true,
+    config = function()
+      require 'luaimg.init'
+      require 'luaimg.image_viewer.luaimg'
     end,
   },
 
