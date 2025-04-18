@@ -46,7 +46,7 @@ Kickstart Guide:
   TODO: The very first thing you should do is to run the command `:Tutor` in Neovim.
 
     If you don't know what this means, type the following:
-      - <escape key>
+      - <escape key>C:\Users\Hans\AppData\Local\nvim-myplugin\lua\myplugin\tracker
       - :
       - Tutor
       - <enter key>
@@ -285,7 +285,7 @@ require('lazy').setup({
       require 'myplugin.tracker.ui'
       require 'myplugin.tracker.espresso'
       require 'myplugin.tracker.meds'
-      require('myplugin.tracker.meds').setup()
+      -- require('myplugin.tracker.meds').setup()
     end,
   },
 
